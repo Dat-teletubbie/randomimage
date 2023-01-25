@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="container">
+      
+        
+
+
+
+    </div>
+    <script>
+        
+const container = document.querySelector(".container");
+const image_url = 'https://source.unsplash.com/random/'
+for(let i=0; i<100; i++)  {
+const img = document.createElement('img');
+img.src =image_url+random()
+container.appendChild(img)
+}
+function random() {
+    return Math.floor(Math.random() * 10) + 300
+        }
+
+</script>
+</body>
+</html>
